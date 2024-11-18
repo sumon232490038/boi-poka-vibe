@@ -21,12 +21,12 @@ const getDataFromLC = () => {
 const addWhshlistDataLC = (id) => {
   const LcData = getDataFromLC();
   if (LcData.includes(id)) {
-    console.log("this is alredy exsiet");
+    toast("this is already exist");
   } else {
     LcData.push(id);
     const makeString = JSON.stringify(LcData);
     localStorage.setItem("Whshlist", makeString);
-    toast("Wow so easy!");
+    toast("This book is added in listbooks");
   }
 };
 // const addMarkAsDataLC = (id) => {

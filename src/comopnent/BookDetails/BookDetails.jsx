@@ -32,13 +32,10 @@ const BookDetails = () => {
   };
 
   return (
-    <div className="hero min-h-screen my-10">
+    <div className="hero min-h-screen my-10 p-5">
       <div className="hero-content flex flex-col lg:flex-row justify-between   ">
-        <div className=" flex-1 flex  h-[800px] w-full items-center justify-center bg-blue-200 py-10 rounded-2xl">
-          <img
-            src={image}
-            className=" max-h-[564px] max-w-[425px] rounded-lg object-cover "
-          />
+        <div className=" flex-1 flex items-center justify-center bg-blue-200 p-10 rounded-2xl">
+          <img src={image} className="  rounded-lg object-cover " />
         </div>
         <div className="flex-1">
           <h1 className="text-5xl font-bold">{bookName}</h1>

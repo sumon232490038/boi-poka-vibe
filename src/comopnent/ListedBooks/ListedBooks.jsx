@@ -20,8 +20,7 @@ const ListedBooks = () => {
 
   console.log(books);
   return (
-    <div>
-      <h1>Listed Books: {books.length}</h1>
+    <div className="mb-20">
       <Tabs>
         <TabList>
           <Tab>Wishlist Books</Tab>
@@ -29,7 +28,7 @@ const ListedBooks = () => {
         </TabList>
 
         <TabPanel>
-          <div>
+          <div className=" mx-auto">
             {books.map((book) => (
               <Book key={book.bookId} book={book}></Book>
             ))}
